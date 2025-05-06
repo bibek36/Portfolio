@@ -35,3 +35,6 @@ Open the `index.html` file in your browser to view the site:
 1. **HTML**: Update the content in the `index.html` file to reflect your personal information, projects, and contact details.
 2. **CSS**: Modify the styles in the `style.css` file to change the look and feel of your website.
 3. **JavaScript**: Add interactivity or functionality in the `main.js` file as needed.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0388efae-f7e9-49ef-a30e-e6c9d69bbb15/deploy-status)](https://app.netlify.com/sites/bibek-mondal/deploys)
