@@ -10,7 +10,7 @@ Static website made with HTML, CSS, JS and Bootstrap
 - [Customization](#customization)
 
 ## Demo
-[Demo](https://bibek-porfolio.netlify.app/)
+[Visit Portfolio Site](https://bibek-mondal.netlify.app/)
 
 
 ## Installation
