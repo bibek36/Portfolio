@@ -605,7 +605,7 @@
               </div>
               <div>
                 <h3 class="mb-4">Website</h3>
-                <p><a>bibek.me</a></p>
+                <p><a>bibek-porfolio.netlify.app</a></p>
               </div>
             </div>
           </div>
@@ -616,8 +616,9 @@
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
             <form
+              id="contactForm"
               method="POST"
-              action="https://formsubmit.co/bibek.mondal.10a@gmail.com"
+              action="https://formsubmit.co/ajax/bibek.mondal.10a@gmail.com"
               class="contact-form animated-form"
               style="
                 position: relative;
@@ -671,11 +672,39 @@
                 />
               </div>
           
-              <!-- Redirect to success page -->
-              <input type="hidden" name="_next" value="https://www.google.com/" />
               <input type="hidden" name="_captcha" value="false" />
             </form>
           </div>
+          
+          <script>
+            document.getElementById("contactForm").addEventListener("submit", function (e) {
+              e.preventDefault();
+          
+              const form = e.target;
+              const data = new FormData(form);
+          
+              fetch(form.action, {
+                method: "POST",
+                body: data,
+                headers: {
+                  Accept: "application/json",
+                },
+              })
+                .then(response => {
+                  if (response.ok) {
+                    alert("✅ Message submitted successfully!");
+                    form.reset();
+                  } else {
+                    alert("❌ Submission failed. Please try again.");
+                  }
+                })
+                .catch(error => {
+                  console.error("Error:", error);
+                  alert("❌ Something went wrong. Please try again later.");
+                });
+            });
+          </script>
+          
 
 
 
